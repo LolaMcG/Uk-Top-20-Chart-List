@@ -1,14 +1,17 @@
 import React from "react";
 
-const SongItem = ({songAsAProp}) => {
+const SongItem = ({title, artist, image}) => {
 
     return (
         <li>
             <h2>
-                {songAsAProp["im:name"]["label"]}
+                {title}
             </h2>
+            <img
+                src={image}>
+            </img>
             <h3>
-                {songAsAProp["im:artist"]["label"]}
+                {artist}
             </h3>
         </li>
     )
